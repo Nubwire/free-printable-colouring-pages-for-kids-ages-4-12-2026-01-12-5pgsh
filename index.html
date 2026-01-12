@@ -254,6 +254,108 @@
         }
     </style>
 </head>
+<!-- Brevo Subscription Form - Dogface Labs -->
+<!-- Place the <style> in the <head> of your page -->
+<style>
+    @font-face {
+        font-display: block;
+        font-family: Roboto;
+        src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"),
+            url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff");
+    }
+
+    body,
+    input,
+    button {
+        font-family: 'Roboto', Helvetica, sans-serif;
+    }
+
+    .brevo-form-container {
+        max-width: 540px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #C0CCD9;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .brevo-form-container h2 {
+        font-size: 28px;
+        color: #40229d;
+        margin-bottom: 16px;
+    }
+
+    .brevo-form-container input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 12px;
+        border: 1px solid #C0CCD9;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .brevo-form-container button {
+        padding: 12px 24px;
+        background-color: #40229d;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .brevo-form-message {
+        display: none;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .brevo-success {
+        color: #085229;
+        background-color: #e7faf0;
+        border: 1px solid #13ce66;
+    }
+
+    .brevo-error {
+        color: #661d1d;
+        background-color: #ffeded;
+        border: 1px solid #ff4949;
+    }
+</style>
+
+<!-- Place this where you want the form to appear -->
+<div class="brevo-form-container">
+    <h2>Free Printable Coloring Pages</h2>
+    <form id="brevo-form" method="POST"
+        action="https://250ef976.sibforms.com/serve/MUIFAAOED7S-eeN6_PKVJZVKJBOsiRczCRLH0tSgAsNfw4G-67ETN0sKKlbdJFyCXVBg_5FymDafOZ611-K3hM0n4y3NiO8ZN8GXpOAMGuhLcdd5aIYWEGiyUq4RfZAkwyKZj8om8-IEL6k6oUw9XW-w7qGt6DHBeBePsD7Di-AqfLk04WBXX3V4NfFaLHuYm5IIF2EVX6zMphdMxA=="
+        data-type="subscription">
+        <input type="text" name="EMAIL" placeholder="Enter your email" required>
+        <button type="submit">Get Free Pages</button>
+    </form>
+    <div id="brevo-success" class="brevo-form-message brevo-success">
+        Your subscription has been successful!
+    </div>
+    <div id="brevo-error" class="brevo-form-message brevo-error">
+        There was an error. Please try again.
+    </div>
+</div>
+
+<!-- Place this at the bottom of the page, before </body> -->
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script>
+    const form = document.getElementById('brevo-form');
+  const successMsg = document.getElementById('brevo-success');
+  const errorMsg = document.getElementById('brevo-error');
+
+  form.addEventListener('submit', function() {
+    successMsg.style.display = 'none';
+    errorMsg.style.display = 'none';
+  });
+</script>
 <body class="smooth-scroll bg-white text-gray-800">
     <!-- Header & Navigation -->
     <header>
