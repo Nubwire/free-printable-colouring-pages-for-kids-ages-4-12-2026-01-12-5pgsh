@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free printable colouring pages for kids ages 4-12. Instant, screen-free fun — just print and colour. Boost creativity and engage kids with age-appropriate designs.">
+    <meta name="keywords" content="printable colouring pages, kids coloring, free printables, creative activities">
+    <meta name="author" content="Dogface Labs">
+    <title>Terms of Service - Free Printable Colouring Pages for Kids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .bg-accent {
+            background-color: var(--accent);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .text-accent {
+            color: var(--accent);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--secondary);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: var(--primary);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+            color: var(--primary);
+        }
+        
+        .faq-answer {
+            overflow: hidden;
+            transition: all 0.3s ease;
+            padding-bottom: 1.5rem;
+            color: #6b7280;
+            line-height: 1.75;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 15px 40px rgba(91, 75, 255, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--secondary) 0%, rgba(255, 255, 255, 0.5) 100%);
+        }
+        
+        .section-title {
+            color: var(--primary);
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.875rem;
+            }
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        
+        nav {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
+        .mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-button {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+        
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .mobile-menu a {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.75rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .mobile-menu a:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu:not(.hidden) {
+                display: flex;
+            }
+        }
+
+        .policy-content h2 {
+            color: var(--primary);
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-content h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-content p {
+            color: #4b5563;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .policy-content ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-content li {
+            color: #4b5563;
+            line-height: 1.75;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body class="smooth-scroll bg-white text-gray-800">
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="flex items-center justify-between w-full">
+                <a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh" class="logo">ColorFun Kids</a>
+                <a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh" class="nav-links a">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 md:py-24 px-4 md:px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="section-title text-4xl md:text-5xl leading-tight mb-4">
+                Terms of Service
+            </h1>
+            <p class="text-lg text-gray-700 font-light">
+                Last updated: January 2025
+            </p>
+        </div>
+    </section>
+
+    <!-- Terms of Service Content -->
+    <section class="py-16 md:py-24 px-4 md:px-6">
+        <div class="max-w-4xl mx-auto policy-content">
+            <!-- Introduction -->
+            <div>
+                <h2>1. Introduction and Agreement to Terms</h2>
+                <p>
+                    Welcome to ColorFun Kids ("we," "us," "our," or "Company"). These Terms of Service ("Terms") govern your access to and use of our website, services, and all content provided therein (collectively, the "Service"). By accessing or using ColorFun Kids, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these Terms, please do not use our Service.
+                </p>
+                <p>
+                    We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the Service. Your continued use of the Service following the posting of revised Terms means that you accept and agree to the changes. We encourage you to review these Terms periodically to stay informed of any updates.
+                </p>
+            </div>
+
+            <!-- User Agreements -->
+            <div>
+                <h2>2. User Agreements and Eligibility</h2>
+                
+                <h3>2.1 Age Eligibility</h3>
+                <p>
+                    The Service is intended for use by parents, guardians, educators, and other adults seeking colouring materials for children ages 4-12. By using our Service, you represent and warrant that you are at least 18 years of age or the legal age of majority in your jurisdiction. If you are under 18 years of age, you may only use the Service under the supervision and with the consent of a parent or legal guardian.
+                </p>
+
+                <h3>2.2 Account Responsibility</h3>
+                <p>
+                    While our Service does not require account creation, if you choose to create an account or provide personal information, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of any account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other breach of security.
+                </p>
+
+                <h3>2.3 Authorized Use</h3>
+                <p>
+                    You agree to use the Service only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of the Service. Prohibited behavior includes harassing or causing distress or inconvenience to any person, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within our Service.
+                </p>
+            </div>
+
+            <!-- Acceptable Use -->
+            <div>
+                <h2>3. Acceptable Use Policy</h2>
+                
+                <h3>3.1 Permitted Uses</h3>
+                <p>
+                    You are granted a limited, non-exclusive, non-transferable license to download and print colouring pages from ColorFun Kids for personal, non-commercial use. This includes use in educational settings such as classrooms, schools, libraries, and community organizations. You may use the materials for group activities, teaching purposes, and similar non-profit educational activities.
+                </p>
+
+                <h3>3.2 Prohibited Uses</h3>
+                <p>
+                    You agree not to:
+                </p>
+                <ul>
+                    <li>Reproduce, distribute, or transmit the colouring pages for commercial purposes or profit</li>
+                    <li>Modify, alter, or create derivative works from the colouring pages</li>
+                    <li>Claim ownership of or credit yourself as the creator of the colouring pages</li>
+                    <li>Sell, resell, rent, or lease the colouring pages or access to the Service</li>
+                    <li>Use the Service in any way that violates applicable laws or regulations</li>
+                    <li>Attempt to gain unauthorized access to the Service or its systems</li>
+                    <li>Engage in any form of harassment, abuse, or threatening behavior</li>
+                    <li>Transmit viruses, malware, or any other harmful code</li>
+                    <li>Collect or track personal information of others without consent</li>
+                    <li>Interfere with or disrupt the normal operation of the Service</li>
+                </ul>
+
+                <h3>3.3 Intellectual Property Rights</h3>
+                <p>
+                    All content on ColorFun Kids, including but not limited to colouring page designs, illustrations, text, graphics, logos, and images, is the exclusive property of ColorFun Kids or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, display, or transmit any content without our prior written permission, except as permitted under these Terms.
+                </p>
+            </div>
+
+            <!-- Limitation of Liability -->
+            <div>
+                <h2>4. Limitation of Liability and Disclaimers</h2>
+                
+                <h3>4.1 "As Is" Disclaimer</h3>
+                <p>
+                    The Service and all content provided are offered on an "as is" and "as available" basis. ColorFun Kids makes no warranties, express or implied, regarding the Service, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the Service will be uninterrupted, error-free, or free from viruses or other harmful components.
+                </p>
+
+                <h3>4.2 Limitation of Damages</h3>
+                <p>
+                    To the fullest extent permitted by law, ColorFun Kids shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Service, including but not limited to loss of profits, loss of data, loss of use, or other intangible losses, even if we have been advised of the possibility of such damages.
+                </p>
+
+                <h3>4.3 Safety and Content</h3>
+                <p>
+                    While we strive to provide age-appropriate content suitable for children ages 4-12, ColorFun Kids does not guarantee that all content will be appropriate for every child. Parents and guardians are responsible for supervising their children's use of the Service and determining what content is suitable for their individual children. We are not responsible for any harm, distress, or negative outcomes resulting from the use of our colouring pages.
+                </p>
+
+                <h3>4.4 Third-Party Links</h3>
+                <p>
+                    The Service may contain links to third-party websites or services. ColorFun Kids does not endorse, warrant, or assume responsibility for the accuracy, completeness, or availability of third-party content. Your use of third-party websites or services is governed by their own terms and conditions, and we are not liable for any damages or losses arising from your interaction with third-party sites.
+                </p>
+
+                <h3>4.5 Indemnification</h3>
+                <p>
+                    You agree to indemnify, defend, and hold harmless ColorFun Kids, its owners, operators, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable attorney's fees) arising from your use of the Service, your violation of these Terms, or your infringement of any intellectual property or other rights of any person or entity.
+                </p>
+            </div>
+
+            <!-- Privacy and Data -->
+            <div>
+                <h2>5. Privacy and Data Collection</h2>
+                <p>
+                    Your use of the Service is also governed by our Privacy Policy. Please review our Privacy Policy to understand our practices regarding the collection, use, and protection of your personal information. By using the Service, you consent to the collection and use of information as outlined in our Privacy Policy.
+                </p>
+            </div>
+
+            <!-- Termination -->
+            <div>
+                <h2>6. Termination</h2>
+                <p>
+                    ColorFun Kids reserves the right to suspend or terminate your access to the Service at any time, with or without cause, and with or without notice. Upon termination, your right to use the Service will immediately cease. Provisions of these Terms that by their nature should survive termination, including but not limited to limitations on liability, intellectual property rights, and indemnification, shall survive termination.
+                </p>
+            </div>
+
+            <!-- Governing Law -->
+            <div>
+                <h2>7. Governing Law and Jurisdiction</h2>
+                <p>
+                    These Terms of Service shall be governed by and construed in accordance with the laws of the jurisdiction in which ColorFun Kids operates, without regard to its conflict of law principles. Any legal action or proceeding arising under these Terms shall be brought exclusively in the courts located within that jurisdiction, and you hereby consent to the personal jurisdiction and venue of such courts.
+                </p>
+            </div>
+
+            <!-- Severability -->
+            <div>
+                <h2>8. Severability</h2>
+                <p>
+                    If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, or if such modification is not possible, the provision shall be severed, and the remaining provisions shall continue in full force and effect.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h2>9. Contact Information</h2>
+                <p>
+                    If you have any questions, concerns, or complaints regarding these Terms of Service or the Service itself, please contact us at:
+                </p>
+                <p>
+                    <strong>ColorFun Kids</strong><br>
+                    Email: <a href="mailto:dogfacelabs@gmail.com" class="text-primary hover:underline">dogfacelabs@gmail.com</a><br>
+                </p>
+                <p>
+                    We appreciate your feedback and will make every effort to resolve any issues promptly and fairly. Please allow us a reasonable amount of time to respond to your inquiries.
+                </p>
+            </div>
+
+            <!-- Final Note -->
+            <div>
+                <h2>10. Entire Agreement</h2>
+                <p>
+                    These Terms of Service, together with our Privacy Policy and any other policies or guidelines published on the Service, constitute the entire agreement between you and ColorFun Kids regarding your use of the Service and supersede all prior and contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written. No course of dealing or trade usage will be used to modify, amend, supplement, or nullify any provision of these Terms.
+                </p>
+                <p>
+                    Thank you for using ColorFun Kids. We hope our colouring pages bring joy, creativity, and screen-free fun to your family!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4 md:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-4">ColorFun Kids</h3>
+                    <p class="text-sm font-light leading-relaxed">
+                        Free, high-quality colouring pages for kids ages 4-12. Screen-free creativity at your fingertips.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-6 uppercase tracking-wide">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh#features" class="hover:text-accent transition-colors duration-300">Features</a></li>
+                        <li><a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh#benefits" class="hover:text-accent transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh#testimonials" class="hover:text-accent transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh#faq" class="hover:text-accent transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-6 uppercase tracking-wide">Resources</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://Nubwire.github.io/free-printable-colouring-pages-for-kids-ages-4-12-2026-01-12-5pgsh#about" class="hover:text-accent transition-colors duration-300">About Us</a></li>
+                        <li><a href="mailto:dogfacelabs@gmail.com" class="hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div>
+                    <h4 class="text-white font-semibold text-sm mb-6 uppercase tracking-wide">Get In Touch</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <a href="mailto:dogfacelabs@gmail.com" class="hover:text-accent transition-colors duration-300">
+                                dogfacelabs@gmail.com
+                            </a>
+                        </li>
+                        <li class="pt-4">
+                            <div class="flex gap-4">
+                                <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-300" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 ColorFun Kids. All rights reserved. Made with <span class="text-accent">♥</span> for creative families everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
